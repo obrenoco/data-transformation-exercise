@@ -26,7 +26,7 @@ The solutions to these exercises can be found on the [feature/solutions](https:/
 
 ```bash
 # Clone the repo
-git clone git@github.com:kerenKi/dataTransFormationExercises.git
+git clone git@github.com:Official-Codaisseur-Graduate/data-transformation-exercise.git
 # change directory
 cd dataTransFormationExercises
 # Install dependencies
@@ -51,15 +51,15 @@ Running the exercises this way will make use of the `--watch` functionality of j
 # This part is for the teachers
 In this forked repo from https://github.com/Codaisseur/dataTransFormationExercises there are some changes:
 
-1. [Package.json](https://github.com/kerenKi/dataTransFormationExercises/blob/master/package.json)
+1. [Package.json](https://github.com/Official-Codaisseur-Graduate/data-transformation-exercise/blob/master/package.json)
 
 The script for jest includes a default reporter coming from the root directory
 
-2. [customSequencer.js](https://github.com/kerenKi/dataTransFormationExercises/blob/master/customSequencer.js)
+2. [customSequencer.js](https://github.com/Official-Codaisseur-Graduate/data-transformation-exercise/blob/master/customSequencer.js)
 
 Make sure the tests are running by order
 
-3. [customReporter.js](https://github.com/kerenKi/dataTransFormationExercises/blob/master/customReporter.js)
+3. [customReporter.js](https://github.com/Official-Codaisseur-Graduate/data-transformation-exercise/blob/master/customReporter.js)
 
 The reporter tracks changes in the tests. the first time the student will run the tests there will be no record of it.
 After the student makes a change in the files and run the tests again the reporter will start sending reports to Heroku database every time the tests run.
@@ -128,6 +128,31 @@ Example of data output:
                     ]
         }
 
+```
+
+```
+
+Installing the whole app:
+```
+1) Install the server
+$ git clone git@github.com:Official-Codaisseur-Graduate/cont-testing-server.git
+$ cd cont-testing-server
+$ npm install
+$ nodemon .
+// nodemon will restart the app after every saved changes.
+
+2) Install the client
+
+$ git clone git@github.com:Official-Codaisseur-Graduate/cont-testing-client.git
+$ cd cont-testing-client
+$ npm install
+$ npm start
+
+3) Run the exercise Data Transformation to get your own data.
+https://github.com/Official-Codaisseur-Graduate/data-transformation-exercise
+
+$ git clone git@github.com:Official-Codaisseur-Graduate/data-transformation-exercise.git
+$ npm run test
 ```
 
 ### `other relevant repos`
