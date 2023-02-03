@@ -23,7 +23,7 @@ describe("Array methods: reduce:", () => {
     expect(totalEggDistance).toBe(408);
   });
 
-  test.skip("getHeaviestPokemon: returns the heaviest pokemon from an array of pokemons", () => {
+  test("getHeaviestPokemon: returns the heaviest pokemon from an array of pokemons", () => {
     const heaviestPokemon = getHeaviestPokemon(pokemons);
     expect(heaviestPokemon.id).toBe(143);
   });

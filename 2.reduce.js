@@ -25,6 +25,13 @@ const calculateTotalEggDistance = (pokemons) => {
     }, 0);
 };
 
+const getHeaviestPokemon = (pokemons) => {
+  return pokemons.sort(
+    (pokemonA, pokemonB) =>
+      parseFloat(pokemonB.weight) - parseFloat(pokemonA.weight)
+  )[0];
+};
+
 // const calculateTotalEggDistance = (pokemons) => {};
 
 // {
@@ -49,4 +56,5 @@ module.exports = {
   calculateTotalPokemonWeight,
   calculateAverageSpawnChance,
   calculateTotalEggDistance,
+  getHeaviestPokemon,
 };
